@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Services - CyberWorld</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="custom-header">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="Logo" height="50"></a>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="services.html">Services</a></li>
+                        <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" onclick="toggleSidebar()">☰</div>
+            </div>
+        </header>
+
+        <div class="container" id="container">
+            <!-- Sidebar -->
+            <aside class="sidebar" id="sidebar">
+                <div class="close-btn" onclick="toggleSidebar()">></div>
+                <h5>Quick Links</h5>
+                <ul class="side-nav">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="services.html">Services</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    <hr>
+                    <li><a class="nav-link" href="https://www.youtube.com/@FitEduPh">Youtube</a></li>
+                    <li><a class="nav-link" href="https://www.instagram.com/feutech_official/">Instagram</a></li>
+                    <li><a class="nav-link" href="https://www.facebook.com/FEUTechOfficial">Facebook</a></li>
+                    <li><a class="nav-link" href="https://x.com/FEUTechOfficial">Twitter</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main content -->
+            <div class="main-content" id="mainContent">
+                <main>
+                    <h2>Our Services</h2>
+                    <div class="services-wrapper">
+                        <div class="service-box">
+                            <img src="img1.png" alt="Service 1">
+                            <div class="service-description">
+                                <h3>Anti-Virus Software</h3>
+                                <p>CyberWorld Anti-Virus Software delivers comprehensive protection against modern digital threats. Designed for both personal and professional use, it actively scans your system for viruses, malware, ransomware, spyware, and other malicious attacks—all in real time. With intelligent threat detection powered by cloud-based analysis, CyberWorld not only blocks known dangers but also anticipates and neutralizes emerging threats before they cause harm. Its lightweight design ensures minimal impact on your system's performance, allowing you to work, browse, and stream without interruption.
+                                    Additional features include scheduled system scans, automatic updates, phishing protection, and a customizable firewall to give users full control over their digital safety.</p>
+                            </div>
+                            <button class="buy-btn">BUY SOON</button>
+                        </div>
+
+                        <div class="service-box">
+                            <img src="img2.png" alt="Service 2">
+                            <div class="service-description">
+                                <h3>CyberWorld Security Monitor</h3>
+                                <p>CyberWorld Security Monitor offers real-time visibility into your system's activities, empowering users to detect unusual behavior and respond to threats before they escalate. Designed for both home users and enterprise environments, it continuously monitors applications, network traffic, login attempts, and background processes.
+                                    Featuring customizable alert systems, automated response options, and comprehensive logs, this tool helps you identify vulnerabilities, track performance, and reinforce your digital safety.</p>
+                            </div>
+                            <button class="buy-btn">BUY SOON</button>
+                        </div>
+
+                        <div class="service-box">
+                            <img src="img3.jpg" alt="Service 3">
+                            <div class="service-description">
+                                <h3>CyberDrive</h3>
+                                <p>CyberDrive is a secure, cloud-based storage solution designed for users who value both privacy and performance. It allows seamless syncing of files across devices while ensuring top-tier encryption for all stored data. Built with collaboration in mind, CyberDrive supports shared folders, real-time editing, and version history.
+                                    Security-first architecture includes multi-factor authentication, end-to-end encryption, and automated backups, ensuring your files are never lost or compromised.</p>
+                            </div>
+                            <button class="buy-btn">BUY SOON</button>
+                        </div>
+
+                        <div class="service-box">
+                            <img src="img4.jpeg" alt="Service 4">
+                            <div class="service-description">
+                                <h3>Identity & Access Management</h3>
+                                <p>CyberWorld's Identity & Access Management (IAM) system streamlines user authentication and authorization. With support for Single Sign-On (SSO), multi-factor authentication, and role-based access control, it ensures that only the right people gain access to the right resources at the right time.
+                                    The platform offers a centralized dashboard for administrators to manage access while maintaining compliance with international data privacy standards.</p>
+                            </div>
+                            <button class="buy-btn">BUY SOON</button>
+                        </div>
+
+                        <div class="service-box">
+                            <img src="img5.jpg" alt="Service 5">
+                            <div class="service-description">
+                                <h3>CyberWorld Authentication Manager</h3>
+                                <p>This tool governs user access through advanced verification technologies, including biometric recognition, OTP delivery, and adaptive multi-factor authentication. Built for individuals and businesses, it integrates into existing systems while offering robust security features and centralized management tools.
+                                    With flexible APIs and real-time monitoring, CyberWorld Authentication Manager provides scalable identity protection without sacrificing user experience.</p>
+                            </div>
+                            <button class="buy-btn">BUY SOON</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer>
+            <img src="logo.png" alt="Footer Logo">
+            <p>Web Designer: Ching Sai, Marc Angelo M.</p>
+            <p>Email: feumarcangelo.13@gmail.com</p>
+        </footer>
+
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                const container = document.getElementById('container');
+                sidebar.classList.toggle('active');
+                container.classList.toggle('sidebar-open');
+            }
+        </script>
+    </body>
+</html>

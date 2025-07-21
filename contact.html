@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact - CyberWorld</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="custom-header">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="CyberWorld Logo" height="50" />
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="services.html">Services</a></li>
+                        <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" onclick="toggleSidebar()">☰</div>
+            </div>
+        </header>
+
+        <div class="container" id="container">
+            <!-- Sidebar -->
+            <aside class="sidebar" id="sidebar">
+                <div class="close-btn" onclick="toggleSidebar()">></div>
+                <h5>Quick Links</h5>
+                <ul class="side-nav">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="services.html">Services</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    <hr />
+                    <li><a class="nav-link" href="https://www.youtube.com/@FitEduPh">Youtube</a></li>
+                    <li><a class="nav-link" href="https://www.instagram.com/feutech_official/">Instagram</a></li>
+                    <li><a class="nav-link" href="https://www.facebook.com/FEUTechOfficial">Facebook</a></li>
+                    <li><a class="nav-link" href="https://x.com/FEUTechOfficial">Twitter</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main content -->
+            <div class="main-content" id="mainContent">
+                <main class="form-section">
+                    <form class="contact-form" action="https://formsubmit.co/feumarcangelo.13@gmail.com" method="POST">
+                        <h2>Customer Service Message Submission</h2>
+
+                        <div class="inputBox">
+                            <input type="text" name="username" required />
+                            <label>Name</label>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="email" required />
+                            <label>Email</label>
+                        </div>
+
+                        <div class="inputBox">
+                            <textarea name="Message" required></textarea>
+                            <label>Message</label>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="submit" value="Send" />
+                        </div>
+
+                        <p>Or contact us via email: feumarcangelo.13@gmail.com</p>
+                    </form>
+                </main>
+            </div>
+        </div>
+
+        <footer>
+            <img src="logo.png" alt="Footer Logo" />
+            <p>Web Designer: Ching Sai, Marc Angelo M.</p>
+            <p>Email: feumarcangelo.13@gmail.com</p>
+        </footer>
+
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                const container = document.getElementById('container');
+                sidebar.classList.toggle('active');
+                container.classList.toggle('sidebar-open');
+            }
+
+            document.querySelectorAll('label').forEach(label => {
+                label.innerHTML = label.innerText
+                    .split('')
+                    .map((letter, i) => `<span style="transition-delay: ${i * 100}ms">${letter}</span>`)
+                    .join('');
+            });
+        </script>
+    </body>
+</html>

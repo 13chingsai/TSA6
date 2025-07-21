@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home - CyberWorld</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="custom-header">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="Logo" height="50"></a>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="services.html">Services</a></li>
+                        <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" onclick="toggleSidebar()">☰</div>
+            </div>
+        </header>
+
+        <div class="container" id="container">
+            <!-- Sidebar -->
+            <aside class="sidebar" id="sidebar">
+                <div class="close-btn" onclick="toggleSidebar()">></div>
+                <h5>Quick Links</h5>
+                <ul class="side-nav">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="services.html">Services</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    <hr>
+                    <li><a class="nav-link" href="https://www.youtube.com/@FitEduPh">Youtube</a></li>
+                    <li><a class="nav-link" href="https://www.instagram.com/feutech_official/">Instagram</a></li>
+                    <li><a class="nav-link" href="https://www.facebook.com/FEUTechOfficial">Facebook</a></li>
+                    <li><a class="nav-link" href="https://x.com/FEUTechOfficial">Twitter</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main content -->
+            <div class="main-content" id="mainContent">
+                <main>
+                    <section class="intro-text-block">
+                        <h3>Welcome to CyberWorld,</h3>
+                        <p>Entering the space of digitalization could put you at harm, but here at CyberWorld, we're committed to building secure, smart, and efficient digital solutions for a safer online world. 
+                            From safeguarding sensitive data to monitoring system activity and preventing threats before they strike, our mission is to make technology work for you—not against you. With every tool we build, we prioritize trust, transparency, and user empowerment.
+                            Explore our innovative ecosystem designed to protect, monitor, and elevate your digital presence—seamlessly and confidently.</p>
+                        <p style="text-align: center; font-size: 23px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Where security meets innovation, and your digital world stays protected.</i></b></p>
+
+                    </section>
+
+                    <h2>CyberWorld Products</h2>
+                    <div class="content-wrapper">
+
+                        <a href="services.html" class="content-block">
+                            <img src="img1.png" alt="Image 1">
+                            <p><b>Anti-Virus Software</b></p>
+                            <p>CyberWorld Anti-Virus Software delivers comprehensive protection against modern digital threats.</p>
+                        </a>
+
+                        <a href="services.html" class="content-block">
+                            <img src="img2.png" alt="Image 2">
+                            <p><b>CyberWorld Security Monitor</b></p>
+                            <p>CyberWorld Security Monitor offers real-time visibility into your system's activities, empowering users to detect unusual behavior.</p>
+                        </a>
+
+                        <a href="services.html" class="content-block">
+                            <img src="img3.jpg" alt="Image 3">
+                            <p><b>CyberDrive</b></p>
+                            <p>CyberDrive is a secure, cloud-based storage solution designed for users who value both privacy and performance.</p>
+                        </a>
+
+                        <a href="services.html" class="content-block">
+                            <img src="img4.jpeg" alt="Image 4">
+                            <p><b>Identity & Access Management</b></p>
+                            <p>CyberWorld's Identity & Access Management (IAM) system streamlines user authentication and authorization, allowing organizations to manage who can access what—efficiently and securely.</p>
+                        </a>
+
+                        <a href="services.html" class="content-block">
+                            <img src="img5.jpg" alt="Image 5">
+                            <p><b>CyberWorld Authentication Manager</b></p>
+                            <p>CyberWorld Authentication Manager is a next-gen security tool that governs user access through advanced verification technologies.</p>
+                        </a>
+
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer>
+            <img src="logo.png" alt="Footer Logo">
+            <p>Web Designer: Ching Sai, Marc Angelo M.</p>
+            <p>Email: feumarcangelo.13@gmail.com</p>
+        </footer>
+
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                const container = document.getElementById('container');
+                sidebar.classList.toggle('active');
+                container.classList.toggle('sidebar-open');
+            }
+        </script>
+    </body>
+</html>

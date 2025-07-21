@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About - CyberWorld</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="custom-header">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="Logo" height="50"></a>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="services.html">Services</a></li>
+                        <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" onclick="toggleSidebar()">☰</div>
+            </div>
+        </header>
+
+        <div class="container" id="container">
+            <!-- Sidebar -->
+            <aside class="sidebar" id="sidebar">
+                <div class="close-btn" onclick="toggleSidebar()">></div>
+                <h5>Quick Links</h5>
+                <ul class="side-nav">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="services.html">Services</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    <hr>
+                    <li><a class="nav-link" href="https://www.youtube.com/@FitEduPh">Youtube</a></li>
+                    <li><a class="nav-link" href="https://www.instagram.com/feutech_official/">Instagram</a></li>
+                    <li><a class="nav-link" href="https://www.facebook.com/FEUTechOfficial">Facebook</a></li>
+                    <li><a class="nav-link" href="https://x.com/FEUTechOfficial">Twitter</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main content -->
+            <div class="main-content" id="mainContent">
+                <main>
+                    <!-- First section -->
+                    <div class="about-page">
+                        <h2>About CyberWorld</h2>
+                    </div>
+                    <div class="about-wrapper">
+                        <div class="about-section">
+                            <img src="logo.png" alt="Our Team">
+                            <div class="about-text">
+                                <p><b><em>CyberWorld</em></b> is a forward-thinking digital brand dedicated to enhancing the way individuals and organizations experience cybersecurity and digital empowerment. In a world where technology is deeply integrated into every aspect of life, we believe that security, awareness, and innovation must go hand-in-hand.
+                                    Our core mission is to provide reliable tools, services, and education that help users stay protected, informed, and ahead of emerging threats. From real-time system monitoring to digital literacy initiatives, CyberWorld strives to bridge the gap between everyday users and the often complex world of cybersecurity.
+                                    What sets us apart is our commitment to both technology and people. We not only design platforms that detect unusual behavior and promote secure systems, but we also educate users to make smarter decisions online. Whether you're a student learning about safe browsing, a small business protecting your data, or a tech enthusiast looking 
+                                    for the latest in cyber trends—CyberWorld is your ally in building a safe and intelligent digital environment.
+                                    At our core, we stand for security, transparency, innovation, and digital responsibility. We envision a future where cybersecurity is not just a background concern, but a built-in, proactive part of everyone's digital journey.
+                                    Welcome to CyberWorld—where your digital safety meets smart innovation. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second section -->
+                    <div class="about-page">
+                        <h2>The CyberWorld Team</h2>
+                    </div>
+                    <div class="about-wrapper">
+                        <div class="about-section">
+                            <img src="team.png" alt="Our Team">
+                            <div class="about-text">
+                                <p>At the heart of CyberWorld is a passionate and diverse team of cybersecurity enthusiasts, developers, designers, and digital strategists who share one goal: to make the digital world safer and smarter for everyone. Our team brings together expertise from across the tech landscape—combining technical excellence with a deep understanding 
+                                    of user needs. Whether it's building cutting-edge monitoring tools, crafting intuitive user experiences, or educating communities about online threats, the CyberWorld team works collaboratively to turn complex challenges into simple, powerful solutions. Together, we're shaping a future where cybersecurity is accessible, proactive, and empowering. </p>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer>
+            <img src="logo.png" alt="Footer Logo">
+            <p>Web Designer: Ching Sai, Marc Angelo M.</p>
+            <p>Email: feumarcangelo.13@gmail.com</p>
+        </footer>
+
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                const container = document.getElementById('container');
+                sidebar.classList.toggle('active');
+                container.classList.toggle('sidebar-open');
+            }
+        </script>
+    </body>
+</html>
